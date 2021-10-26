@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<style>
+  .center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align:center;
+  }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck</title>
+</head>
+<body>
+<div class="center">
+    <h1> Joke about Chuck</h1>
+    <br>
+    <h2 th:text="${jokeModel.getValue()}"></h2>
+    <br>
+    <form action="/api/chuck">
+        <button type="submit" value="Get new joke">Get new joke</button>
+    </form>
+    <br>
+</div>
+
+</body>
+</html>
